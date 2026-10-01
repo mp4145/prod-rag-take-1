@@ -1,0 +1,25 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+numpy 
+
+google-generativeai
+langchain-google-genai
+sentence-transformers       #Local fallback embedding model
+
+qdrant-client
+
+#For Smart Parsing
+unstructured
+python-pptx
+python-docx
+pypdf
+beautifulsoup4
+pdfplumber
+
+logfire[fastapi, requests]
+loguru
+
+
+
