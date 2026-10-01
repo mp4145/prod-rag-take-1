@@ -30,7 +30,9 @@ def _load_fallback():
     return SentenceTransformer("all-mpnet-base-v2")
 
 def _init():
-    """Initialize embedding model once per process. Called lazily on first use."""
+    """Initialize embedding model once per process. Called lazily on first use.
+        AKA Lazy Initialization.
+    """
     global _active_model, _model_type
 
     if _active_model is not None:
